@@ -3,7 +3,7 @@
 > This is a fork/copy on the Majid7692 account. Original repo: thedotmack/claude-mem.
 > Original author/credit and Apache-2.0 license are preserved (see LICENSE).
 > This copy does NOT claim the original code was written by Majid7692.
-> Only change in this copy so far: this A-Z guide was added as a reminder, plus item A below (provider comparison).
+> Only change in this copy so far: this A-Z guide was added as a reminder, plus item A below (provider comparison) and item B below (<private> examples).
 
 ## 1. Ye kya hai? (What is it)
 Persistent memory compression system built for Claude Code. It captures what an agent does during sessions, compresses it with AI, and injects relevant context back into future sessions, so work continues even after a session ends or reconnects.
@@ -63,6 +63,20 @@ Kab kaun sa choose karo (yaad rakhne ke liye):
 - Lambi use me: apni key ya plan.
 - Privacy zyada chahiye to: apni key + `<private>` tags.
 
-## 8. Reminder / Next step
+## 8. Item B — `<private>` examples: diary me kia NAHI likhna (Added 2026-11-04, approved by MAJID)
+Simple matlab: agar kisi baat ke aage `<private>` likh do, to wo baat claude-mem ki diary me save nahi hogi. Is ka matlab ye nahi ke wo baat chat me nahi dikhegi — sirf ye ke wo memory me store nahi hogi.
+
+Diary me kabhi nahi likhna (in par `<private>` lagao):
+- Password — jaise: `<private>` mera account password ye hai
+- API key / token — jaise: `<private>` meri Gemini/OpenRouter key ye hai
+- Personal baat — jaise: `<private>` mera ghar ka address, phone number, bank ya ID number
+- Kisi aur ka private data — jaise: `<private>` dost ka number ya us ki private baat
+- Screenshot me private cheez — screenshot on karne se pehle check karo ke us me password, key ya personal cheez to nahi
+
+Yaad rakhne ke liye:
+- Shak ho to `<private>` laga do, diary se nikalna mushkil hai, pehle se rokna asaan hai.
+- Ye examples sirf samajhne ke liye hain — in me koi asli password, key ya personal data NAHI likhna, na guide me, na repo me.
+
+## 9. Reminder / Next step
 - Jab upstream me naya version aaye, fork ko sync karo, phir ye guide dobara check karo ke install command badla to nahi.
 - Agar memory kaam na kare: pehle Node version, phir plugin restart, phir upstream Troubleshooting section dekho.
